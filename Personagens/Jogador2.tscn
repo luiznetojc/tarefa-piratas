@@ -963,7 +963,7 @@ HP_Max = 10
 
 [node name="AnimatedSprite" parent="." index="0"]
 frames = SubResource( 1 )
-animation = "ataque_esquerda"
+animation = "andar_baixo"
 
 [node name="CollisionShape2D" parent="." index="1"]
 position = Vector2( 1, 22 )
