@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Tiles/Coisas.tres" type="TileSet" id=1]
+[ext_resource path="res://Personagens/Jogador2.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Mecanicas/Porta.tscn" type="PackedScene" id=3]
+[ext_resource path="res://GUI/HUD.tscn" type="PackedScene" id=4]
+
+[node name="LevelTemplates" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+
+[node name="Tilemaps" type="Node" parent="."]
+
+[node name="Objetivos" type="Node" parent="."]
+
+[node name="Portas" type="Node" parent="."]
+
+[node name="Porta" parent="Portas" instance=ExtResource( 3 )]
+
+[node name="Luzes" type="Node" parent="."]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="Luzes"]
+
+[node name="Coletaveis" type="Node" parent="."]
+
+[node name="Inimigos" type="Node" parent="."]
+
+[node name="HUD" parent="." instance=ExtResource( 4 )]
+
+[node name="Jogador" parent="." instance=ExtResource( 2 )]
+
+[node name="Sons" type="Node" parent="."]
+
+[node name="Tema" type="AudioStreamPlayer" parent="Sons"]
