@@ -529,6 +529,7 @@ scale = Vector2( 13.4687, 10.1562 )
 
 [node name="CanvasModulate" parent="Luzes" index="0"]
 position = Vector2( -2, 0 )
+color = Color( 0, 0, 0, 1 )
 
 [node name="Luz" parent="Luzes" index="1" instance=ExtResource( 5 )]
 position = Vector2( 988.5, 90.5 )
@@ -539,8 +540,10 @@ enabled = false
 position = Vector2( 448, -133 )
 
 [node name="Jogador" parent="." index="8"]
-position = Vector2( 243, 330 )
+position = Vector2( 230, 319 )
 z_index = 1
+vel_normal = 100
+vel_corrida = 10
 
 [node name="Tema" parent="Sons" index="0"]
 stream = ExtResource( 7 )

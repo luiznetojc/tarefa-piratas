@@ -9,8 +9,7 @@ func _ready():
 func _process(delta):
 	atualiza_hud()
 func atualiza_hud():
-	get_tree().call_group("HUD","atualiza_health"
-	,HP)
+	get_tree().call_group("HUD","atualiza_health",HP)
 	
 func _input(event):
 	if Input.is_action_just_pressed("ataque") and espada:
@@ -31,7 +30,6 @@ func definir_animacao():
 			$AnimatedSprite.play("espada" + frente)
 		else:
 			$AnimatedSprite.play("andar" + frente)
-		$AnimatedSprite.play("andar" + frente)
 
 
 func _on_AtaqueArea_body_entered(body):

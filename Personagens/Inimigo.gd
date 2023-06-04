@@ -26,7 +26,7 @@ func _on_Visao_body_exited(body):
 
 
 func _on_AtaqueArea_body_entered(body):
-	if body.collsion_layer == 1:
+	if body.collision_layer == 1:
 		set_physics_process(false)
 		player = body
 		$AnimationPlayer.play("ataque" + frente)
